@@ -1,0 +1,103 @@
+html,body,p,input { margin: 0;padding: 0;}
+body, html {color:#000;font-size:12px;font-family: Arial, Times New Roman,Verdana, Arial, sans-serif;}
+
+/*Основные*/   
+.clr {clear:both;}
+input, button, textarea {font-family: 'Arial', 'Geneva', 'sans-serif';}
+a {text-decoration:  underline;}
+a:hover {text-decoration:  none;}
+a img  {border: 0 none;}
+
+@font-face {
+    font-family: 'NeoSansPro-Light';
+    src: url('../fonts/NeoSansPro-Light.ttf.eot');
+    src: local('вє'), url('../fonts/NeoSansPro-Light.ttf.woff') format('woff'), url('../fonts/NeoSansPro-Light.ttf.ttf') format('truetype'), url('../fonts/NeoSansPro-Light.ttf.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFDinTextCondPro-Regular';
+    src: url('../fonts/PFDinTextCondPro-Regular.eot');
+    src: local('вє'), url('../fonts/PFDinTextCondPro-Regular.woff') format('woff'), url('../fonts/PFDinTextCondPro-Regular.ttf') format('truetype'), url('../fonts/PFDinTextCondPro-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*Разметка*/
+
+.wrapp {width:1000px;margin:0 auto;padding:20px 0;text-align: center;}
+
+.cont {background: rgba(3, 3, 3, 0.7);}
+
+.title {font-family: "PFDinTextCondPro-Regular","arial";text-transform: uppercase;padding: 10px 10px 0 10px;font-size: 67px;letter-spacing: 1px;color: #fff;text-align: center;}
+.descr {font-family: "NeoSansPro-Light","arial";color: #fff;font-size: 24px;padding: 0 10px 20px;text-align: center;}
+.descr span {color: #FF7C7C;}
+.form {padding: 10px;background: rgba(0, 0, 0, 0.6);}
+.form input {background: #fff;border: 0;display: block;padding: 17px 10px;width: 300px;float: left;font-size: 16px;margin-right: 20px;}
+.form button {background: #ffae00;border: 0;display: block;padding: 10px 10px;width: 300px;float: left;margin: 0;font-family: "PFDinTextCondPro-Regular","arial";font-size: 30px;letter-spacing: 1px;outline: none;cursor: pointer;}
+.form button:hover {background: #00FC32;}
+#result {padding: 10px 30px 10px;color: #FDBDBD;font-weight: bold;font-size: 15px;text-align: right;padding-right: 30px;letter-spacing: 0.03em;}
+.footer {text-align: center;font-size: 14px;color: #818181;letter-spacing: 0.03em;font-weight:normal;}
+.footer a {color: #B4B4B4;}
+
+.popup {position:fixed; z-index:2000;left:50%;font-family: arial;}
+.popup .cont_pos {position:relative;}
+.p_close {width: 31px;height: 31px;background: url("../img/close.png");position: absolute;}
+.p_close:hover {background: url("../img/close-hover.png");}
+.p_body {background:#000; left:0; top:0; position:fixed; width:100%; height:100%;z-index:1000;opacity: .850;filter: Alpha(Opacity=85);-moz-transition:opacity 1000ms;-o-transition:opacity 1000ms;-webkit-transition:opacity 1000ms; transition:opacity 1000ms;}
+
+.js__popup .p_close {left: -8px;top: -8px;}
+.politic .p_close {right: -12px;top: -12px;}
+  .js__slide_top { height:0; overflow:hidden; top:0; display:none;}
+  .js__fadeout { height:0; overflow:hidden; opacity:0; }
+
+.politic{width: 750px;top: 10%;background: #F5F5F5;height: auto;}
+.politic .p_title {text-align: center;font-size: 20px;padding: 20px 0 10px;font-weight: bold;width: 750px;height: auto;}
+.politic .p_content {padding: 0 15px;font-size: 14px;line-height: 20px;width:720px;}
+.politic .p_content p {padding: 7px 0;}
+
+.formp .p_close {right: -12px;top: -12px;}
+.formp{top: 10%;height: auto;}
+.formp .p_title {text-align: center;font-size: 20px;padding: 20px 0 10px;font-weight: bold;width: 750px;height: auto;}
+.formp .p_content {padding: 0 15px;font-size: 14px;line-height: 20px;width:720px;}
+.formp .p_content p {padding: 7px 0;}
+
+.hidden{
+	display:none;
+	}
+	.bg {
+	background: url(../img/bg.jpg) center center no-repeat;
+	background-attachment: fixed;
+	zoom: 1;
+	background-size: 100%;
+	}
+.form3{padding: 15px;background: rgba(0, 0, 0, 0.6);width: 280px;margin: 0 auto;}
+.form3 button{background: #ffae00;border: 0;display: block;padding: 10px 10px;width: 280px;margin: 0 auto;font-family: 'PFDinTextCondPro-Regular','arial';font-size: 30px;letter-spacing: 1px;outline: none;cursor: pointer;}
+.form3 input {
+margin-bottom: 15px;
+background: #fff;
+border: 0;
+display: block;
+padding: 17px 10px;
+width: 260px;
+float: left;
+font-size: 16px;
+}
+.but-b{width: 100%;background: rgba(3, 3, 3, 0.7);padding-top: 15px;padding-bottom: 15px;}
+.form4{padding: 10px;background: rgba(0, 0, 0, 0.6);width: 280px;margin: 0 auto;}
+.form4 a{text-decoration: none;}
+.form4 button{background: #ffae00;border: 0;display: block;padding: 10px 10px;width: 280px;margin: 0 auto;font-family: 'PFDinTextCondPro-Regular','arial';font-size: 25px;letter-spacing: 1px;outline: none;cursor: pointer;}
+.gall{width:100%; min-height:470px; margin:0 auto;margin-top:50px;margin-bottom:50px;}
+.cont2{float:left;width:30%;margin-right:5%;background: rgba(3, 3, 3, 0.7);}
+.kvart{padding: 5px;width: 270px;margin: 10px auto;text-align:center;color: white;height: 360px;}
+.kvart div{margin-bottom:20px;}
+.kvart span{font-weight: 900;font-size: 20px;}
+.kvart p{font-size: 16px;margin-top: 10px;width: inherit;text-align: justify;}
+.form2{padding: 10px;background: rgba(0, 0, 0, 0.6);width: 250px;margin: 0 auto;margin-bottom: 15px;}
+.form2 button{background: #ffae00;border: 0;display: block;padding: 10px 10px;width: 250px;margin: 0 auto;font-family: 'PFDinTextCondPro-Regular','arial';font-size: 20px;letter-spacing: 1px;outline: none;cursor: pointer;}
+.form2 a{text-decoration: none;}
+.form2 button:hover {background: #00FC32;}
+.form3 button:hover {background: #00FC32;}
+.form4 button:hover {background: #00FC32;}
